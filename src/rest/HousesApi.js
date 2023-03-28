@@ -41,3 +41,40 @@ class HousesApi {
 
 // Create an instance of the HousesApi class and export it as a named export
 export const housesApi = new HousesApi();
+
+// FUNCTION FORMAT FOR THIS BELOW
+// VVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+// function HousesApi() {
+//         const HOUSES_ENDPOINT = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
+      
+//         async function get() {
+//           try {
+//             const resp = await fetch(HOUSES_ENDPOINT);
+//             const data = await resp.json();
+//             return data;
+//           } catch (e) {
+//             console.log('Oops, looks like fetchHouses had an issue.', e);
+//           }
+//         }
+      
+//         async function put(house) {
+//           try {
+//             const resp = await fetch(`${HOUSES_ENDPOINT}/${house._id}`, {
+//               method: 'PUT',
+//               headers: {
+//                 'Content-Type': 'application/json'
+//               },
+//               body: JSON.stringify(house)
+//             });
+//             return await resp.json();
+//           } catch (e) {
+//             console.log('Oops, looks like updating houses had an issue.', e);
+//           }
+//         }
+      
+//         return { get, put };
+//       }
+      
+//       export const housesApi = HousesApi();
+      

@@ -45,3 +45,48 @@ export const House = (props) => {
         );
 
 };
+
+
+// FUNCTION FORMAT SHOWN BELOW
+//VVVVVVVVVVVVVVVVVVVVVVVVVV
+
+// function House(props) {
+//         const { house, updateHouse } = props;
+        
+//         function deleteRoom(roomId) {
+//         const updatedHouse = {
+//         ...house,
+//         rooms: house.rooms.filter((x) => x._id !== roomId)
+//         };
+//         updateHouse(updatedHouse);
+//         }
+        
+//         function addNewRoom(room) {
+//         updateHouse({ ...house, rooms: [...house.rooms, room] });
+//         }
+        
+//         function rooms() {
+//         return (
+//         <ul>
+//         {house.rooms.map((room, index) => (
+//         <li key={index}>
+//         <label>
+//         {${room.name} area: ${room.area}}
+//         </label>
+//         <button onClick={(e) => deleteRoom(room._id)}>Delete</button>
+//         </li>
+//         ))}
+//         </ul>
+//         );
+//         }
+        
+//         return (
+//         <div>
+//         <h1>{house.name}</h1>
+//         {rooms()}
+//         <NewRoomForm addNewRoom={addNewRoom} />
+//         </div>
+//         );
+//         }
+        
+//         export { House };
